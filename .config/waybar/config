@@ -1,0 +1,58 @@
+[{
+    "name": "bar1",
+    "layer": "top",
+    "output": ["DP-2"],
+    "spacing": 10,
+    "margin": "0 0 0 0",
+
+    // load modules
+    "include": ["~/.config/waybar/modules.json"],
+
+    "modules-left": [
+        "custom/spotlight",
+        "wlr/taskbar",
+        "group/navigation"
+        //"hyprland/workspaces",
+        //"hyprland/window"
+    ],
+
+    "modules-center": [],
+
+    "modules-right": [ 
+        // "network",
+        "clock",
+        // "custom/weather",
+        "group/hardware",
+        "group/systray"
+    ]
+    
+},
+
+{
+    "name": "bar2",
+    "layer": "top",
+    "output": ["DP-1"],
+    "spacing": 10,
+    "margin": "0 0 0 0",
+
+    // load modules
+    "include": ["~/.config/waybar/modules.json"],
+
+    "modules-left": [
+        "custom/spotlight",
+        "wlr/taskbar",
+        "group/navigation"
+        //"hyprland/workspaces",
+        //"hyprland/window"
+    ],
+
+    "modules-center": [],
+
+    "modules-right": [
+        "clock",
+        "group/hardware"
+    ]
+}]
+
+
+
