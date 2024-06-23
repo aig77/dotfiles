@@ -9,7 +9,7 @@
     "include": ["~/.config/waybar/modules.json"],
 
     "modules-left": [
-        "custom/spotlight",
+        //"custom/spotlight",
         "wlr/taskbar",
         "group/navigation"
         //"hyprland/workspaces",
@@ -39,7 +39,7 @@
     "include": ["~/.config/waybar/modules.json"],
 
     "modules-left": [
-        "custom/spotlight",
+        //"custom/spotlight",
         "wlr/taskbar",
         "group/navigation"
         //"hyprland/workspaces",
