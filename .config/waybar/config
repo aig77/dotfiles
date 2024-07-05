@@ -20,9 +20,9 @@
 
     "modules-right": [ 
         // "network",
-        "clock",
         // "custom/weather",
         "group/hardware",
+        "clock",
         "group/systray"
     ]
     
@@ -49,8 +49,8 @@
     "modules-center": [],
 
     "modules-right": [
-        "clock",
-        "group/hardware"
+        "group/hardware",
+        "clock"
     ]
 }]
 
