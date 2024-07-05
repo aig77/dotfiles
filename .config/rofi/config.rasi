@@ -32,7 +32,7 @@ window {
     border:                      2px;
     border-radius:               40px;
     border-color:                @foreground;
-    background-color:            transparent;
+    background-color:            rgba(0, 0, 0, 0.8);
 }
 
 mainbox {
@@ -41,7 +41,7 @@ mainbox {
     padding:                     0px;
     orientation:                 vertical;
     children:                    [ "inputbar" , "listbox" ];
-    background-color:            transparent;
+    background-color:            rgba(0, 0, 0, 0.8);
     /* background-image:            url("~/.cache/current_wallpaper", height); */
 }
 
