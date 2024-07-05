@@ -131,3 +131,6 @@ source ~/.cache/wal/colors-tty.sh
 
 # boot up neofetch
 neofetch
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
