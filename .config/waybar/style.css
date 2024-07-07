@@ -95,7 +95,7 @@ tooltip label{
 
 #workspaces {
     background: @workspacesbackground1;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 10px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     padding-left: 10px;
