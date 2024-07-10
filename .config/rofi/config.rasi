@@ -11,7 +11,7 @@ configuration {
     icon-theme: "Papirus";
 }
 
-/* @theme "~/.config/rofi/themes/theme.rasi" */
+@theme "/dev/null"
 
 /* Dark theme. */
 @import "~/.cache/wal/colors-rofi-dark.rasi"
@@ -31,18 +31,17 @@ window {
     padding:                     0px;
     border:                      2px;
     border-radius:               40px;
-    border-color:                @foreground;
-    background-color:            rgba(0, 0, 0, 0.8);
+    border-color:                @color15;
+    background-color:            rgba(0, 0, 0, 0.4);
 }
-
 mainbox {
     enabled:                     true;
     spacing:                     0px;
     padding:                     0px;
     orientation:                 vertical;
     children:                    [ "inputbar" , "listbox" ];
-    background-color:            rgba(0, 0, 0, 0.8);
-    /* background-image:            url("~/.cache/current_wallpaper", height); */
+    background-color:            transparent;
+    // background-image:            url("~/.cache/current_wallpaper", height); //
 }
 
 // Inputs //
@@ -51,16 +50,16 @@ inputbar {
     spacing:                     0px;
     padding:                     80px;
     children:                    [ "entry" ];
-    background-color:            @urgent-background;
-    /* background-image:            url("~/.cache/current_wallpaper", width); */
+    background-color:            transparent;
+    background-image:            url("~/.cache/current_wallpaper", width);
 }
 entry {
     border-radius:               30px;
     enabled:                     true;
     spacing:                     0px;
     padding:                     20px;
-    text-color:                  @foreground;
-    background-color:            @background;
+    text-color:                  @color15;
+    background-color:            @color0;
 }
 
 
@@ -70,7 +69,7 @@ listbox {
     spacing:                     0px;
     orientation:                 horizontal;
     children:                    [ "listview" , "mode-switcher" ];
-    background-color:            @background;
+    background-color:            transparent;
 }
 listview {
     padding:                     10px;
@@ -86,7 +85,7 @@ listview {
     fixed-columns:               true;
     cursor:                      "default";
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @color15;
 }
 mode-switcher {
     orientation:                 vertical;
@@ -99,12 +98,12 @@ mode-switcher {
 button {
     cursor:                      pointer;
     border-radius:               50px;
-    background-color:            @background;
-    text-color:                  @foreground;
+    background-color:            @color1;
+    text-color:                  @color0;
 }
 button selected {
-    background-color:            @foreground;
-    text-color:                  @background;
+    background-color:            @color4;
+    text-color:                  @color0;
 }
 
 
@@ -116,22 +115,17 @@ element {
     border-radius:               25px;
     cursor:                      pointer;
     background-color:            transparent;
-    text-color:                  @foreground;
-}
-@media(max-aspect-ratio: 1.8) {
-    element {
-        orientation:             horizontal;
-    }
+    text-color:                  @color15;
 }
 element selected.normal {
-    background-color:            @selected-normal-background;
-    text-color:                  @selected-normal-foreground;
+    background-color:            @color4; 
+    text-color:                  @color0;
 }
 element-icon {
     size:                        47px;
     cursor:                      inherit;
     background-color:            transparent;
-    text-color:                  inherit;
+    text-color:                  inherit; 
 }
 element-text {
     vertical-align:              0.5;

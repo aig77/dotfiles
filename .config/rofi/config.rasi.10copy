@@ -1,0 +1,134 @@
+configuration {
+    modi:                        "drun,filebrowser,window,run";
+    show-icons:                  true;
+    display-drun:                " ";
+    display-run:                 " ";
+    display-filebrowser:         " ";
+    display-window:              " ";
+    drun-display-format:         "{name}";
+    window-format:               "{w}{t}";
+    font:                        "JetBrainsMono Nerd Font 10";
+    icon-theme:                  "Papirus";
+}
+
+@theme "/dev/null"
+
+/* Dark theme. */
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+/* Light theme. */
+/* @import "~/.cache/wal/colors-rofi-light" */
+
+* {
+    
+}
+
+// Main //
+window {
+    height:                      40em;
+    width:                       25em;
+    transparency:                "real";
+    fullscreen:                  false;
+    enabled:                     true;
+    cursor:                      "default";
+    spacing:                     0em;
+    padding:                     0em;
+    border-radius:               40px;
+    border-color:                @color2;
+    background-color:            transparent;
+}
+mainbox {
+    enabled:                     true;
+    spacing:                     0em;
+    padding:                     1em;
+    orientation:                 vertical;
+    children:                    [ "inputbar" , "listbox" ];
+    background-color:            rgba(0, 0, 0, 0.5);
+}
+
+
+// Inputs //
+inputbar {
+    enabled:                     true;
+    spacing:                     0em;
+    padding:                     4em;
+    children:                    [ "entry" ];
+    background-color:            @main-bg;
+    background-image:            url("~/.cache/current_wallpaper", width);
+    border-radius:               1em 1em 0em 0em;
+}
+entry {
+    enabled:                     false;
+}
+
+
+// Lists //
+listbox {
+    spacing:                     0em;
+    padding:                     0em;
+    children:                    [ "dummyt" , "listview" , "dummyb" ];
+    background-color:            transparent;
+    border-radius:               0em 0em 1em 1em;
+}
+listview {
+    enabled:                     true;
+    spacing:                     0.4em;
+    padding:                     1em;
+    columns:                     1;
+    lines:                       10;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    expand:                      false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    cursor:                      "default";
+    background-color:            transparent;
+    text-color:                  transparent;
+}
+dummyt {
+    spacing:                     0em;
+    padding:                     0em;
+    background-color:            transparent;
+}
+dummyb {
+    spacing:                     0em;
+    padding:                     0em;
+    background-color:            transparent;
+    border-radius:               0em 0em 1em 1em;
+}
+
+
+// Elements //
+element {
+    enabled:                     true;
+    spacing:                     1em;
+    padding:                     0.2em 0.2em 0.2em 1.5em;
+    border-radius:               50px;
+    cursor:                      pointer;
+    background-color:            transparent;
+    text-color:                  @color15;
+}
+element.selected.normal {
+    background-color:            @color2;
+    text-color:                  @color15;
+}
+element.alternate.urgent {
+    background-color: red;
+    text-color: red; 
+}
+element-icon {
+    size:                        2em;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
+element-text {
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    cursor:                      inherit;
+    background-color:            transparent;
+    text-color:                  inherit;
+}
