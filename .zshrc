@@ -11,7 +11,7 @@ cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 
 # neofetch
-pokeget random --hide-name | fastfetch --file-raw -
+pokeget mew --hide-name | fastfetch --file-raw -
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -125,7 +125,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias clock="tty-clock -S -c -C 4"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias neofetch="fastfetch"
 alias pokefetch="pokeget random --hide-name | fastfetch --file-raw -"
