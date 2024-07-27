@@ -17,6 +17,6 @@ swww img "$img"
 cp "$img" ~/.cache/current_wallpaper
 #cp "$img" ~/.config/rofi/background
 sleep $WAL_START
-~/.config/wal/wal-set.sh "$img"
+wal -i "$img" -o ~/.config/wal/wal.sh
 
 exit 1
