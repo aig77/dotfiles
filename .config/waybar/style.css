@@ -118,14 +118,14 @@ tooltip label{
 }
 
 #workspaces button.active {
-    background: @textcolor1;
+    background: @textcolor3;
     min-width: 25px; 
     transition: all 0.3s ease-in-out;
     opacity: 1.0;
 }
 
 #workspaces button:hover {
-    background: @textcolor3;
+    background: @textcolor4;
     opacity: 0.7;
 }
 
