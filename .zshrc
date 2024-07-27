@@ -11,7 +11,7 @@ cat ~/.cache/wal/sequences
 source ~/.cache/wal/colors-tty.sh
 
 # neofetch
-pokeget mew --hide-name | fastfetch --file-raw -
+krabby name mew --no-title | fastfetch --file-raw -
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
