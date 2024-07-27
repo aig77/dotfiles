@@ -38,7 +38,7 @@ while true; do
 			swww img "$img"
             cp "$img" ~/.cache/current_wallpaper
             sleep $WAL_START 
-            ~/.config/wal/wal-set.sh "$img"
+            wal -i "$img" -o ~/.config/wal/wal.sh
             sleep $INTERVAL
 		done
 done
